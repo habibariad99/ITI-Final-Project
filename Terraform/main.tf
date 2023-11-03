@@ -33,6 +33,7 @@ module "IAM" {
  
   source = "./IAM"
   project_id = var.project_id
+  cluster-sa = var.cluster-sa
   #gke_cluster_service_account = var.gke_cluster_service_account
 }
 

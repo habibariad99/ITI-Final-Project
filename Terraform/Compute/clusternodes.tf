@@ -9,7 +9,7 @@ resource "google_container_node_pool" "primayry-node" {
  node_config {
     machine_type = var.node_machine_type                                       #"e2-micro"
     disk_size_gb = var.node_disk_size_gb
-    service_account = var.cluster-sa        #google_service_account.gke_cluster_service_account.email
+   # service_account = var.cluster-sa      #google_service_account.gke_cluster_service_account.email
     oauth_scopes = [
       "https://www.googleapis.com/auth/cloud-platform"
     ]

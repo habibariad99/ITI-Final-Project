@@ -16,7 +16,7 @@ resource "google_compute_instance" "private-vm" {
     subnetwork = var.private-subnet-name             # google_compute_subnetwork.private-subnet.id
   }
   service_account {
-    email  =    var.vm-sa                                   #google_service_account.private-serviceaccount.email
+    #email  =    var.vm-sa                                   #google_service_account.private-serviceaccount.email
     scopes = ["cloud-platform"]
   }
  
