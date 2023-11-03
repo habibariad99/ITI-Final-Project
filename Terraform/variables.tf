@@ -28,10 +28,6 @@ variable "gke_inital_cluster_node_count" {
   type = number
 }
 
-variable "vm_account_id" {
-  type = string
-}
-
 variable "deletion_protection" {
   type = string
 }
@@ -139,5 +135,13 @@ variable "firewall_name" {
 }
 
 variable "protocol" {
+  type = string
+}
+
+variable "cluster-sa" {
+  type = string
+}
+
+variable "vm-sa" {
   type = string
 }

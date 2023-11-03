@@ -72,3 +72,11 @@ variable "vm_zone" {
 variable "vpc" {
   type = string
 }
+
+variable "cluster-sa" {
+  type = string
+}
+
+variable "vm-sa" {
+  type = string
+}

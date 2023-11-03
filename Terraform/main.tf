@@ -56,6 +56,8 @@ module "Compute" {
   vm_machinetype= var.vm_machinetype
   vm_zone = var.vm_zone
   private-subnet-name = module.Network.private-subnet-name.name
+  cluster-sa = var.cluster-sa
+  vm-sa= var.vm-sa
 
 }
 
