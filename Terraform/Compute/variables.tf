@@ -73,10 +73,16 @@ variable "vpc" {
   type = string
 }
 
-variable "cluster-sa" {
+
+variable "vm-sa" {
   type = string
 }
 
-variable "vm-sa" {
+
+variable "project_id" {
+  type = string
+}
+
+variable "cluster-sa" {
   type = string
 }

@@ -29,13 +29,7 @@ module "Storage" {
 
 }
 
-module "IAM" {
- 
-  source = "./IAM"
-  project_id = var.project_id
-  cluster-sa = var.cluster-sa
-  #gke_cluster_service_account = var.gke_cluster_service_account
-}
+
 
 module "Compute" {
 
@@ -59,6 +53,7 @@ module "Compute" {
   private-subnet-name = module.Network.private-subnet-name.name
   cluster-sa = var.cluster-sa
   vm-sa= var.vm-sa
+  project_id=var.project_id
 
 }
 
