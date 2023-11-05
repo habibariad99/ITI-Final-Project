@@ -1,0 +1,23 @@
+# Base image
+FROM python:3.9-slim
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the pipeline script to the working directory
+COPY app.py .
+
+# Install dependencies
+RUN pip install Flask
+
+# Set environment variables if needed
+ENV ENV_VAR_NAME=value
+
+
+
+# Define the command to run the pipeline script
+CMD ["python3", "app.py"]
+
+
+# gcloud builds submit \
+#   --tag us-central1-docker.pkg.dev/gcp-jenkins-terraform/pythonapp/app.py .
