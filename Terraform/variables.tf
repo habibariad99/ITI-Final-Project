@@ -19,6 +19,10 @@ variable "node_location" {
   type = string
 }
 
+variable "node_locations" {
+  type = string
+}
+
 variable "cluster_location" {
   type = string
 }

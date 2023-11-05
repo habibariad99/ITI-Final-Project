@@ -54,6 +54,11 @@ module "Compute" {
   cluster-sa = var.cluster-sa
   vm-sa= var.vm-sa
   project_id=var.project_id
+  node_pool_locations = var.node_locations
+  #node_locations = var.node_pool_locations
+  
+
+
 
 }
 
